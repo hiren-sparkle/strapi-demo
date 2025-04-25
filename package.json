@@ -4,11 +4,11 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "vercel-build": "npm run build",  // Vercel-specific build command
-    "build": "strapi build",          // Standard Strapi build command
-    "deploy": "strapi deploy",        // Deployment command (optional, might not be needed)
-    "develop": "strapi develop",      // Local development
-    "start": "strapi start"           // Start the Strapi application
+    "vercel-build": "npm run build",
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.10.3",
@@ -18,15 +18,15 @@
     "@strapi/provider-upload-cloudinary": "^5.11.0",
     "@strapi/strapi": "5.10.3",
     "apollo-upload-client": "^18.0.1",
-    "better-sqlite3": "11.3.0",      // You might want to switch to a cloud database like PostgreSQL for Vercel
-    "pg": "^8.15.5",                  // PostgreSQL client
+    "better-sqlite3": "11.3.0",
+    "pg": "^8.15.5",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
   "engines": {
-    "node": ">=18.0.0 <=22.x.x",      // Make sure Vercel supports this Node version
+    "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   },
   "strapi": {
